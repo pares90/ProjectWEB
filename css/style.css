@@ -1,0 +1,342 @@
+/*csslint empty-rules:false, ids:false, outline-none:false, order-alphabetical:false, fallback-colors: false, unique-headings: false, box-model: false, box-sizing: false, qualified-headings: false, gradients: false, star-property-hack: false, import: false, universal-selector: false, unqualified-attributes: false, overqualified-elements: false*/
+
+/*
+========================================================
+    BROWSER RESET - gebaseerd op html5 doctor css reset
+     http://html5doctor.com/html-5-reset-stylesheet
+========================================================
+*/
+
+html, body, div, span,object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+ul {
+    margin-left: 1.1em;
+    margin-right: 1.1em;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+     font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #424242;
+
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*
+========================================================
+    GENERAL
+========================================================
+*/
+
+body {
+    font-family: 'Muli', sans-serif;
+    background: url(../images/resort-008.jpg) no-repeat center center fixed rgba(71,82,109,1.0); 
+    background-size: cover;
+}
+
+main {
+
+}
+
+
+h1 {
+    font-size: 3em;
+    text-transform: capitalize;
+    color: #00D66C;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2.1618em;
+    text-transform: capitalize;
+    color: #00D66C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: #00D66C;
+    font-size: 1.1618em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {    
+    font-size: 2.1618em;
+    text-transform: capitalize;
+    color: #00d66c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    font-size: 1em;
+}
+
+p {
+    padding-top: 1em;
+}
+
+    p::first-letter { 
+    font-size: 200%;
+    color: #2800a0;
+}
+.knop {
+    width: 10em;
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+/*
+========================================================
+    NAVIGATION
+========================================================
+*/
+
+nav{
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    -webkit-box-shadow:  0 2px 5px 0 rgba(0,0,0,0.05);
+    -moz-box-shadow:     0 2px 5px 0 rgba(0,0,0,0.05);
+    box-shadow:          0 2px 5px 0 rgba(0,0,0,0.05);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between
+}
+
+nav li a{
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+    color: #00D66C;
+}
+
+nav a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #2800A0;
+}
+
+.active {
+    border-bottom: 3px solid #424242;
+    color: #ff3268;
+}
+
+/*
+========================================================
+    INDEX
+========================================================
+*/
+
+
+
+div.wizard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+div#populair, div#recent {
+    display: flex;
+    color: #606060;
+    background-color: white;
+    flex-direction: column;
+    margin-right: 1em;
+    align-items: flex-start;
+    border-radius: 5px;
+    padding:1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.stories {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+.leesduur, .wizard {
+    height: 15em;
+    width: 30em;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding: 1em;
+}
+
+#topBlock {
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+/*
+========================================================
+    LOGIN
+========================================================
+*/
+
+#login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 214, 108, 0.9);
+    height: 4em;
+    width: 4em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em
+}
+
+/*
+========================================================
+    VERHAAL
+========================================================
+*/
+
+#verhaalcontainer {
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.verhaal {
+    width: 40em;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding: 1em;
+}
+
+/*
+========================================================
+    MEDIA QUERIES
+========================================================
+*/
+
+/*Smartphone*/
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+    .topBlock {
+        width: 100%
+    }
+    .leesduur, .wizard {
+        width: 70%;
+    }
+    .stories p {
+        display: none;  
+    }
+
+    
+    .verhaal {
+    width: 90%
+}
+    #verhaalcontainer {
+        width 4em;
+        background-color: rgba(255,255,255,0.9);
+    }
+    
+    /* iPhone 6 Portrait */ 
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+    /* iPhone 6 landscape */
+    #topblock {
+       display: flex;
+       flex-direction: row;
+    }
+    .leesduur, .wizard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .stories p {
+        display: none;  
+    }
+    #populair, #recent {
+    margin-top: 1em;
+}
