@@ -5,83 +5,206 @@
     <meta charset="UTF-8">
     <title>Lees</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header>
-        <h1>transavia</h1>
         <nav>
+            <div id="mobile-menu">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa fa-bars"></i></button>
+                    <div class="dropdown-content">
+                        <h3><i class="fa fa-book" aria-hidden="true"></i>Selecteer je favoriete genre's</h3>
+                        <div class="bottem">
+
+
+                            <label><input type="checkbox"/><a href="#">test</a></label>
+                            <label><input type="checkbox"/><a href="#">test</a></label>
+                            <label><input type="checkbox"/><a href="#">test</a></label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <ul>
-                <li><a href=index.html>home</a></li>
-                <li><a href=#>categorieen</a></li>
-                <li><a href=#>zoeken</a></li>
-                <li><a href=login.html>profiel</a></li>
+
+
+                <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li>
+                    <form>
+                        <input type="text" name="search" class="seach" placeholder="zoeken">
+                    </form>
+                </li>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa fa-angle-down"></i>genres</button>
+                    <div class="dropdown-content">
+                        <h3><i class="fa fa-book" aria-hidden="true"></i>Selecteer je favoriete genre's</h3>
+                        <div class="bottem">
+
+
+                            <label><input type="checkbox"/><a href="#">Geweld</a></label>
+                            <label><input type="checkbox"/><a href="#">Roman</a></label>
+                            <label><input type="checkbox"/><a href="#">Kids</a></label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
     </header>
 
-
     <main>
-        <div id="topBlock">
-            <div class="wizard">
-                <h2>genre</h2>
-                <form action="#">
-                    <input type="checkbox" name="genre" value="gedichten">gedichten
-                    <input type="checkbox" name="genre" value="sport">sport
-                    <input type="checkbox" name="genre" value="bn-ers">bn-ers
-                    <input type="checkbox" name="genre" value="reizen">reizen
-                </form>
-            </div>
+        <h1>verhalen</h1>
 
-
-            <div class="leesduur">
-                <h2>leesduur</h2>
-
-                <form action="#">
-                    1 min
-                    <input type="range" name="points" min="0" max="10">10 min
-                </form>
-            </div>
-            <input type="submit" class="knop">
+        <div class="filter">
+            <label>
+  <select>
+    <option>Meest populair</option>
+    <option>Minst populair</option>
+    <option>Meest gelezen</option>
+    <option>Minst gelezen</option>
+    <option>Leestijd 1-3 minuten</option>
+    <option>Leestijd 4-6 minuten</option>
+  </select>
+</label>
         </div>
 
+        <section>
 
+
+            <article>
+                <img src="images/rain.jpg" alt="droevig">
+
+                <div class="contentcontainer">
+                    <h2>Neerslachtig</h2>
+                    <div class="meta">
+                        <button>134 likes</button>
+
+                        <button><i class="fa fa-heart" aria-hidden="true"></i>
+</button>
+                    </div>
+                    <a href="neerslachtig.html">
+                        <p>Ach en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet – ligt vredig in zijn wagentje te slapen, vrij van kwade gedachten.</p>
+                    </a>
+                </div>
+            </article>
+
+
+            <article>
+                <img src="images/violence.jpg" alt="geweld">
+
+                <div class="contentcontainer">
+                    <h2>Gefrustreerd</h2>
+                    <div class="meta">
+                        <button>10 likes</button>
+
+                        <button><i class="fa fa-heart" aria-hidden="true"></i>
+</button>
+                    </div>
+                    <a href="gefrustreerd.html">
+                        <p>
+                            Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen.</p>
+                    </a>
+                </div>
+            </article>
+
+
+            <article>
+                <img src="images/dizzy.jpg" alt="duizelingwekkend">
+
+                <div class="contentcontainer">
+                    <h2>Kater</h2>
+                    <div class="meta">
+                        <button>73 likes</button>
+
+                        <button><i class="fa fa-heart" aria-hidden="true"></i>
+</button>
+                    </div>
+                    <a href="kater.html">
+                        <p>
+                            Ik had vandaag bus 21 willen nemen naar het Centraal Station om naar de Openbare Bibliotheek te gaan en Stijloefeningen van Raymond Queneau te lenen, een boekwerk waar ik al weken naar op zoek ben.</p>
+                    </a>
+                </div>
+            </article>
+
+        
+                    <article>
+                <img src="images/Edinburgh.jpg" alt="a">
+
+                <div class="contentcontainer">
+                    <h2>Beroemd</h2>
+                    <div class="meta">
+                        <button>3 likes</button>
+
+                        <button><i class="fa fa-heart" aria-hidden="true"></i>
+</button>
+                    </div>
+                    <a href="#">
+                        <p>
+                            Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station.</p>
+                    </a>
+                </div>
+            </article>
+            
+                                <article>
+                <img src="images/Edinburgh.jpg" alt="a">
+
+                <div class="contentcontainer">
+                    <h2>Beroemd</h2>
+                    <div class="meta">
+                        <button>3 likes</button>
+
+                        <button><i class="fa fa-heart" aria-hidden="true"></i>
+</button>
+                    </div>
+                    <a href="#">
+                        <p>
+                            Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station.</p>
+                    </a>
+                </div>
+            </article>
+            
+                                <article>
+                <img src="images/Edinburgh.jpg" alt="a">
+
+                <div class="contentcontainer">
+                    <h2>Beroemd</h2>
+                    <div class="meta">
+                        <button>3 likes</button>
+
+                        <button><i class="fa fa-heart" aria-hidden="true"></i>
+</button>
+                    </div>
+                    <a href="#">
+                        <p>
+                            Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station.</p>
+                    </a>
+                </div>
+            </article>
+        
+        
+        
+
+        </section>
 
 
 
 
     </main>
 
-
-
-    <div class="stories">
-        <a href="verassing.html">
-            <div id="populair">
-                <h3>Populair</h3>
-                <h4>Beroemd</h4>
-                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn.. </p>
-            </div>
-
-        </a>
-
-
-
-        <a href="#">
-            <div id="recent">
-                <h3>Recent</h3>
-                <h4>Beroemd</h4>
-                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn...</p>
-            </div>
-        </a>
-    </div>
     <footer>
+
     </footer>
 
-
-
 </body>
+
+
 
 </html>

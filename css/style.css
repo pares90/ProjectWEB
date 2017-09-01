@@ -1,4 +1,5 @@
-/*csslint empty-rules:false, ids:false, outline-none:false, order-alphabetical:false, fallback-colors: false, unique-headings: false, box-model: false, box-sizing: false, qualified-headings: false, gradients: false, star-property-hack: false, import: false, universal-selector: false, unqualified-attributes: false, overqualified-elements: false*/
+                /*csslint empty-rules:false, ids:false, outline-none:false, order-alphabetical:false, fallback-colors: false, unique-headings: false, box-model: false, box-sizing: false, qualified-headings: false, gradients: false, star-property-hack: false, import: false, universal-selector: false, unqualified-attributes: false, overqualified-elements: false*/
+
 
 /*
 ========================================================
@@ -7,7 +8,75 @@
 ========================================================
 */
 
-html, body, div, span,object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,17 +85,36 @@ html, body, div, span,object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre
     background: transparent;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+
+/*
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
     display: block
 }
+*/
 
 nav ul {
-    list-style: none
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
 }
 
 ul {
     margin-left: 1.1em;
-    margin-right: 1.1em;
 }
 
 a {
@@ -37,12 +125,11 @@ a {
     background: transparent;
     text-decoration: none;
     color: inherit;
-     font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.8em;
+    line-height: 1.5em;
     color: #424242;
-
 }
 
 table {
@@ -59,8 +146,9 @@ hr {
     padding: 0
 }
 
-input, select {
-    vertical-align: middle;
+input,
+select {
+    vertical-align: middle
 }
 
 *,
@@ -69,226 +157,492 @@ input, select {
     box-sizing: border-box;
 }
 
+
 /*
 ========================================================
     GENERAL
 ========================================================
 */
 
+@font-face {
+    font-family: "nexaregular";
+    src: url("../fonts/NexaRegular.otf") format("otf");
+}
+
+@font-face {
+    font-family: "nexabold";
+    src: url("../fonts/nexaregular.otf") format("otf");
+}
+
+@font-face {
+    font-family: "MeltdownMF";
+    src: url("../fonts/MeltdownMF.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Toxia_FRE";
+    src: url("../fonts/Toxia_FRE.ttf") format("ttf");
+}
+
+
 body {
-    font-family: 'Muli', sans-serif;
-    background: url(../images/resort-008.jpg) no-repeat center center fixed rgba(71,82,109,1.0); 
-    background-size: cover;
+    font-family: "nexaregular", sans-serif;
+    background-color: #F3E5DC;
 }
 
-main {
-
+input:focus {
+    outline: none;
 }
 
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
 
 h1 {
-    font-size: 3em;
-    text-transform: capitalize;
-    color: #00D66C;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h2 {
-    font-size: 2.1618em;
-    text-transform: capitalize;
-    color: #00D66C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h3 {
-    color: #00D66C;
-    font-size: 1.1618em;
-}
-
-h4 {
-    font-size: 1em;
-}
-
-h5 {    
-    font-size: 2.1618em;
-    text-transform: capitalize;
-    color: #00d66c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-aside {
-    font-size: 1em;
-}
-
-p {
+    text-align: center;
     padding-top: 1em;
 }
 
-    p::first-letter { 
-    font-size: 200%;
-    color: #2800a0;
-}
-.knop {
-    width: 10em;
-    margin-top: 1em;
-    margin-bottom:1em;
-}
 
-
-footer {
-    display: flex;
-    justify-content: center;
-}
 /*
 ========================================================
     NAVIGATION
 ========================================================
 */
 
-nav{
-    width: 100%;
+#mobile-menu {
+    display: none;
+}
+
+nav {
+    height: 4em;
     background: white;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    -webkit-box-shadow:  0 2px 5px 0 rgba(0,0,0,0.05);
-    -moz-box-shadow:     0 2px 5px 0 rgba(0,0,0,0.05);
-    box-shadow:          0 2px 5px 0 rgba(0,0,0,0.05);
-}
-
-nav ul{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
     display: flex;
-    justify-content: space-between
 }
 
-nav li a{
-    font-size: 1em;
-    text-transform: capitalize;
-    font-weight: 500;
-    text-decoration: none;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none
+}
+
+nav ul li {
+    font-family: "nexabold", sans-serif;
+    font-size: 1.5em;
     color: #00D66C;
 }
 
-nav a:hover {
-    text-decoration: none;
-    border-bottom: 3px solid #2800A0;
+.fa-home:before,
+#hamburger-menu {
+    font-size: 3em;
+    /*    margin-top: -0.5em;*/
+    color: #00D66C;
 }
 
-.active {
-    border-bottom: 3px solid #424242;
-    color: #ff3268;
+.fa-user:before {
+    font-size: 3em;
+    margin-top: -0.5em;
+    color: #00D66C;
 }
+
 
 /*
-========================================================
-    INDEX
-========================================================
+===============
+    SEARCH
+===============
 */
 
-
-
-div.wizard {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
+nav input[type=text] {
+    font-family: "nexabold", sans-serif;
+    color: #00D66C;
+    width: 10em;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: .5em;
+    font-size: 1.2em;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
-div#populair, div#recent {
-    display: flex;
-    color: #606060;
-    background-color: white;
-    flex-direction: column;
-    margin-right: 1em;
-    align-items: flex-start;
-    border-radius: 5px;
-    padding:1em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-.stories {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-
-
-.leesduur, .wizard {
-    height: 15em;
+nav input[type=text]:focus {
     width: 30em;
-    background-color: rgba(255,255,255,0.9);
-    border-radius: 15px;
-    margin-top: 1em;
+}
+
+
+/*Source: https://stackoverflow.com/questions/2610497/change-an-html5-inputs-placeholder-color-with-css*/
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #00D66C;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #00D66C;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #00D66C;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #00D66C;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #00D66C;
+}
+
+placeholder {
+    font-family: "nexaregular", sans-serif;
+}
+
+
+/*
+===============
+    DROPDOWN
+===============
+*/
+
+.dropbtn {
+    font-family: "nexabold", sans-serif;
+    color: #00D66C;
+    margin-top: 0.4em;
+    background-color: #ffffff;
+    font-size: 1.8em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn a {
+    font-size: 3em;
+}
+
+.dropdown {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    padding: 1em;
 }
 
-#topBlock {
-        display: flex;
-    justify-content: center;
+.dropdown .bottem {
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+
+.dropdown .bottem a {
+    margin: 0 1em;
+}
+
+.dropdown-content {
+    border: .1px solid lightgrey;
+    border-radius: .5em;
+    display: none;
+    position: absolute;
+    min-width: 100em;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 1em;
+    color: #00D66C;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #F3E5D8
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#hamburger-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    /*    background-color: #3e8e41;*/
+}
+
+.fa-angle-down:before {
+    margin-right: 0.1em;
+    font-size: 1em;
+    color: #00D66C;
+}
+
+.fa-book:before {
+    margin-right: 0.5em;
+}
+
+.dropdown-content h3 {
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    font-size: 1.5em;
+    color: #00D66C;
+}
+
+.bottem {
+    background-color: #f7f7f7;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-
 }
 
+.bottem a {
+    font-size: 1.5em;
+}
 
 
 /*
 ========================================================
-    LOGIN
+    MAIN
 ========================================================
 */
 
-#login {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 214, 108, 0.9);
-    height: 4em;
-    width: 4em;
+main {
+    background-color: #F3E5D8;
+    height: 100vh;
 }
 
-form {
+section {
     display: flex;
-    flex-direction: column;
-    font-size: 1em
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+}
+
+label:before {
+    content: '';
+    height: 1.9em;
+    position: absolute;
+    right: 0.4em;
+    top: 0.18em;
+    width: 22px;
+    background: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    pointer-events: none;
+    display: block;
+}
+
+label:after {
+    content: " ";
+    position: absolute;
+    right: 15px;
+    top: 46%;
+    margin-top: -3px;
+    z-index: 2;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6.9px 4px 0 4px;
+    border-color: #aaa transparent transparent transparent;
+    pointer-events: none;
+}
+
+label select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 30px 0 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    line-height: 36px;
+    height: 36px;
+    background: #fff;
+    margin: 0 5px 5px 0;
+}
+
 
 /*
 ========================================================
-    VERHAAL
+    ARTICLES
 ========================================================
 */
 
-#verhaalcontainer {
-        display: flex;
-    justify-content: center;
+article {
+    background-color: #FBF7F3;
+    border-radius: .5em;
+    margin: 1em;
+    width: 20em;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-
 }
 
-.verhaal {
-    width: 40em;
-    background-color: rgba(255,255,255,0.9);
-    border-radius: 15px;
-    margin-top: 1em;
+article .meta {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+article .meta button,
+#loginbutton {
+    margin: 1em 0;
+    border-radius: 1.75em;
+    box-shadow: 0px 3px 0px #ca2b53;
+    color: #ffffff;
+    background: #ff3368;
+    width: 7em;
+    height: 2.2em!important;
+    border: 0.0625em solid rgba(0, 0, 0, 0.1);
+    text-indent: .3em;
+    outline: none;
+    cursor: pointer;
+}
+
+#loginbutton {
+    width: 100%;
+}
+
+article img {
+    width: 100%;
+    height: 10em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+article .contentcontainer {
+    padding: .5em;
+}
+
+article p {
+    font-size: 1.3em;
+}
+
+.contentcontainer p {
+    font-size: 1em;
     padding: 1em;
 }
+
+.fullstory {
+    width: 50em;
+}
+
+
+/*
+========================================================
+    LOGIN FORM
+========================================================
+*/
+
+.loginbody {
+    background-image: url(../images/Edinburgh.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbody form {
+    display: flex;
+    background-color: #fff;
+    height: 20em;
+    border-radius: .5em;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.loginbody form fieldset,
+.loginbody form input {
+    width: 100%;
+    padding: 1.2em;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
+
+fieldset {
+    padding: 1em 0;
+    display: flex;
+}
+
+.loginform input {
+    border: 1px solid #606060;
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+
+.loginform input[type=date] {
+    border: 1px solid #606060;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+
+/*
+========================================================
+    NEERSLACHTIG
+========================================================
+*/
+
+
+main #neerslachtig p {
+    background-image: url(../images/rain.jpg);
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 0.5em;
+    line-height: 1em;
+    font-family: "MeltdownMF";
+}
+
+
+/*
+========================================================
+    GEFRRUSTREERD
+========================================================
+*/
+
+
+main #gefrustreerd p {
+    background-image: url(../images/violence.jpg);
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 0.5em;
+    line-height: 1em;
+    font-family: "Toxia_FRE";
+}
+
+
+/*
+========================================================
+    KATER
+========================================================
+*/
+
+
+main #kater p {
+    background-image: url(../images/dizzy.jpg);
+    font-size: 4em;
+    color: blue;
+    font-family: "Toxia_FRE";
+}
+
+div #kater p #katereffect {
+    font-size: 6em;
+}
+
+
+
 
 /*
 ========================================================
@@ -296,47 +650,86 @@ form {
 ========================================================
 */
 
-/*Smartphone*/
-
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
-    .topBlock {
-        width: 100%
+@media only screen and (max-device-width: 70em) {
+    #mobile-menu {
+        display: none;
     }
-    .leesduur, .wizard {
-        width: 70%;
+    nav input[type=text] {
+        width: 25em;
     }
-    .stories p {
-        display: none;  
-    }
-
-    
-    .verhaal {
-    width: 90%
-}
-    #verhaalcontainer {
-        width 4em;
-        background-color: rgba(255,255,255,0.9);
-    }
-    
-    /* iPhone 6 Portrait */ 
-}
-
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
-    /* iPhone 6 landscape */
-    #topblock {
-       display: flex;
-       flex-direction: row;
-    }
-    .leesduur, .wizard {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .stories p {
-        display: none;  
-    }
-    #populair, #recent {
-    margin-top: 1em;
-}
+    @media only screen and (max-device-width: 60em) {
+        #mobile-menu {
+            display: none;
+        }
+        nav input[type=text] {
+            width: 20em;
+        }
+        @media only screen and (max-device-width: 50em) {
+            
+            main #neerslachtig p {
+                font-size: 10em;
+            }
+            
+              main #gefrustreerd p {
+                font-size: 2em;
+            }
+            
+                 main #kater p {
+                font-size: 2em;
+            }
+            
+            #mobile-menu {
+                display: block;
+            }
+            .fa-home:before {
+                display: none;
+            }
+            nav input[type=text] {
+                width: 15em;
+            }
+            article img {
+                display: none;
+            }
+            @media only screen and (max-device-width: 40em) {
+                
+                
+                
+                #mobile-menu {
+                    display: block;
+                }
+                .fa-home:before {
+                    display: none;
+                }
+                nav input[type=text] {
+                    width: 2em;
+                }
+                article {
+                    width: 40em;
+                }
+                article img {
+                    display: none;
+                }
+                section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                @media only screen and (max-device-width: 30em) {
+                    #mobile-menu {
+                        display: block;
+                    }
+                    .fa-home:before {
+                        display: none;
+                    }
+                    article {
+                        width: 40em;
+                    }
+                    article img {
+                        display: none;
+                    }
+                    section {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
